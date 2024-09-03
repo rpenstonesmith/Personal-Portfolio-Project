@@ -11,16 +11,55 @@ body {
 
 h1 {
   font-family: 'Anonymous Pro', monospace;
-  color: #64FFDA;
-  text-align: left;
-  padding: 16px 0;
-  text-decoration: none;
   font-size: 1.5rem;
+  color: #64FFDA;
+}
+
+h2 {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #64FFDA;
+  padding: 1rem 0 0 0;
+  margin: 2rem 0 0 0;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #ccd6f6;
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+h4 {
+  font-size: 1rem;
+  color: #64768B;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 1rem;
+  font-weight: 100;
+  color:  #64768B; 
+}
+
+.subheading {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #64FFDA;
+  padding: 1rem 0 0 0;
+  margin: 2rem 0 0 0;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-/* Navigation Bar */
+/* Header */
 
 .r-logo {
   float: left;
@@ -88,6 +127,8 @@ li.contact-btn {
     border: 1px solid #64FFDA;
   }
 
+ /* About */
+
  /* Animation */
   
 .anim-typewriter{
@@ -118,21 +159,10 @@ li.contact-btn {
   font-weight: 100;
   color: #64FFDA;
   font-family: 'Anonymous Pro', monospace;
-
+  text-align: left;
+  text-decoration: none;
+  padding: 16px 0;
 }
-
-/* Subtitles */
-
-h2 {
-  font-size: 1rem;
-  font-weight: 100;
-  color: #64FFDA;
-  font-family: 'Anonymous Pro', monospace;
-  padding: 1rem 0 0 0;
-  margin: 2rem 0 0 0;
-}
-
-/* Bio */
 
 section {
   margin-top: 3rem;
@@ -141,15 +171,6 @@ section {
 .bio {
   display: flex;
   align-items: center;
-}
-
-
-h3 {
-  font-size: 2.5rem;
-  color: #ccd6f6;
-  font-family: 'Anonymous Pro', monospace;
-  font-weight: 100;
-  margin-top: 0px;
 }
 
 .bio .profile-img {
@@ -277,7 +298,7 @@ footer {
   margin-top: 3rem;
 }
 
-h6 {
+.copyright {
   font-family: 'Anonymous Pro', monospace;
   color:  #64768B;
   text-align: left;
@@ -329,4 +350,48 @@ ul.bottom-nav-mid {
   
   .bottom-nav a:active {
     color: #64768B;
+  }
+
+  /* Contact Form */
+
+  input[type=text], textarea {
+    font-family: 'Anonymous Pro', monospace;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 1rem;
+    resize: vertical;
+  }
+
+  input[type=email] {
+    font-family: 'Anonymous Pro', monospace;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 1rem;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color:#64768B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:#94A3B8;
+  }
+  
+  .container {
+    padding: 20px 0;
+    font-family: 'Anonymous Pro', monospace;;
   }
