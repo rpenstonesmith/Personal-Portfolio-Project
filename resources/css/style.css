@@ -352,7 +352,33 @@ ul.bottom-nav-mid {
     color: #64768B;
   }
 
+
+
+  /* Socials */
+
+  .contact-container h1 {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 2rem 0 1rem 0;
+    color: #64FFDA;
+  }
+
+  .contact-container p {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 2rem 0 1rem 0;
+    color:#64768B;
+  }
+
   /* Contact Form */
+
+  .email-header {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+  }
 
   input[type=text], textarea {
     font-family: 'Anonymous Pro', monospace;
@@ -369,9 +395,9 @@ ul.bottom-nav-mid {
   input[type=email] {
     font-family: 'Anonymous Pro', monospace;
     width: 100%;
-    padding: 12px;
+    padding: 0.75rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 1rem;
@@ -381,9 +407,9 @@ ul.bottom-nav-mid {
   input[type=submit] {
     background-color:#64768B;
     color: white;
-    padding: 12px 20px;
+    padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
   }
   
@@ -391,7 +417,7 @@ ul.bottom-nav-mid {
     background-color:#94A3B8;
   }
   
-  .container {
-    padding: 20px 0;
+  .form-container {
+    padding: 1.5rem 0;
     font-family: 'Anonymous Pro', monospace;;
   }
