@@ -89,11 +89,6 @@ body {
     margin-inline-end: 0;
     display: none;
   }
-
-  .skills .fa-brands {
-    margin-left: 1rem;
-    padding-bottom: 2rem;
-  }
 }
 
 h1 {
@@ -318,6 +313,7 @@ a.btn {
   margin-right: 1rem;
   background-color:#94A3B8;
   padding: 0 10px;
+  border-radius: 5px;
 }
 
 .article-img2 {
@@ -328,6 +324,7 @@ a.btn {
   margin-right: 1rem;
   background-color: #94A3B8;
   padding: 0 10px;
+  border-radius: 5px;
 }
 
 .projects {
@@ -353,8 +350,18 @@ h5.coding-project {
   display: flex;
 }
 
-.skills .fa-brands {
-  margin-left: 1rem;
+.skills {
+  display: flex;
+}
+
+.skills p {
+  margin-right: 1rem;
+}
+
+.skill-icon .fa-brands {
+  margin-right: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 3rem;
 }
 
 /* Experience */
