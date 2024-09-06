@@ -64,7 +64,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 680) {
+@media only screen and (max-width: 680px) {
   .bio {
     flex-direction: column;
   }
@@ -80,6 +80,16 @@ body {
     max-width: 480px;
     margin: 0 auto;
     padding: 0 20px;
+  }
+
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
   }
 
   .bio {
