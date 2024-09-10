@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="resources/css/style.css" rel="stylesheet"/>
-  <script src="https://kit.fontawesome.com/fb18def344.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resources/css/style.css" rel="stylesheet"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/fb18def344.js" crossorigin="anonymous"></script>
+    <title>Ross Penstone-Smith</title>
 </head>
-
-<!--Header-->
 
 <header>
   <nav class="header">
-    <a class="logo">Ross Penstone-Smith</a>
+    <a class="logo anim-typewriter">Ross Penstone-Smith</a>
     <div class="header-right">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -23,50 +23,144 @@
   </nav>
 </header>
 
-<!--Hero Container-->
+<!--About-->
 
-<section class="hero-image" id="about">
-  <div class="hero-text">
-    <h1 class="line-1 anim-typewriter">Hi, my name is...</h1>
-    <h3 class="name">Ross Penstone-Smith, <br>aspiring Front-End Developer</br></h3>
-      <p>
-        By day, I'm currently a Primary School Teacher. I have taught for 7 years, mostly in upper KS2.
-      </br>
-      <br>
-        By night, I am building my front-end skills in HTML, CSS, Javascript and more to
-        create inspiring, easy-to-use, functional websites.
-      </br>
-      <br>
-        In my free time I enjoy baking and following my favourite sports teams.
-      </br>
-      </p>
+<body>
+    <section class="hero-image" id="about">
+      <div class="hero-text">
+            <h1 class="main">Hi, I'm <span class="name">Ross Penstone-Smith,</span></h1>
+            <h4 class="title">Front-End Web Developer.</h4>
+      </div>  
+    </section>
+  
+<!--Projects-->
 
-  </div>  
+<section class="projects" id="projects">
+    <h2 class="subheading">Projects I've built...</h2>
+        
+    <div class="project-container">
+      <div class="project">
+        <div class="image-container">
+          <img src="./resources/images/Fotomat webpage.png"/>
+        </div>
+        <div class="content">
+          <h2>Responsive wepage</h2>
+          <h3>A response webpage built using HTML and CSS. Utillising media queries to produce a responsive navigation bar, main content and footer</h3>
+          <h6>Skills:</h6>
+        <div class="skill-icon">
+          <i class="fa-brands fa-html5 fa-2xl" title="html5" aria-hidden="true"></i>
+          <i class="fa-brands fa-css3-alt fa-2xl" title="css3" aria-hidden="true"></i>
+        </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="image-container">
+          <img src="./resources/images/Fotomat webpage.png"/>
+        </div>
+        <div class="content">
+          <h2>Project Two</h2>
+          <h3>A response webpage built using HTML and CSS. Utillising media queries to produce a responsive navigation bar, main content and footer</h3>
+          <h6>Skills:</h6>
+          <div class="skill-icon">
+            <i class="fa-brands fa-html5 fa-2xl" title="html5" aria-hidden="true"></i>
+            <i class="fa-brands fa-css3-alt fa-2xl" title="css3" aria-hidden="true"></i>
+            <i class="fa-brands fa-git fa-2xl" title="git" aria-hidden="true"></i>
+            <i class="fa-brands fa-github fa-2xl" title="github" aria-hidden="true"></i>
+          </div>
+          </div>
+        </div>
+
+      <div class="project">
+        <div class="image-container">
+          <img src="./resources/images/Player Counter.png"/>
+        </div>
+        <div class="content">
+          <h2>Player Counter</h2>
+          <h3>A simple webpage using basic HTML, CSS and Javascript to count the numnber of players used by my favourite football team.</h3>
+          <h6>Skills: </h6>
+          <div class="skill-icon">
+            <i class="fa-brands fa-html5 fa-2xl" title="html5" aria-hidden="true"></i>
+            <i class="fa-brands fa-css3-alt fa-2xl" title="css3" aria-hidden="true"></i>
+            <i class="fa-brands fa-js fa-2xl" title="Javascript" aria-hidden="true"></i>
+            <i class="fa-brands fa-git fa-2xl" title="git" aria-hidden="true"></i>
+            <i class="fa-brands fa-github fa-2xl" title="github" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
 
-<!--Footer-->
+<!--Experience-->
+  
+      <section class="experience" id="experience">
+        <div class="experience-card">
+          <h2 class="subheading">Places I've worked...</h2>
+
+          <div class="experience-container">
+
+            <div class="experience-circle">
+              <img src="./resources/images/school.jpg" alt="books and crayons" class="image" style="width:100%">
+              <div class="experience-location">
+                <div class="text-circle">
+                <h4 class="employer">Education - Primary School</h4>
+                <p>For the past 7 years I've worked as a Primary School Teacher in year 5 and 6. Since the birth of my second son, I've worked as a supply teacher, covering upper KS2.</p>
+                <h5 class="date">2016 - Current</h5>
+              </div>
+              </div>
+            </div>
+
+            <div class="experience-circle">
+              <img src="./resources/images/cityscape.jpg" alt="City of London at night" class="image" style="width:100%">
+                <div class="experience-location">
+                  <div class="text-circle">
+                  <h4 class="employer">Finance - Association of British Insurers</h4>
+                      <p>Worked as a Policy Advisor at the Association of British Insurers, leading policy development with ABI
+                      members and building strong relationships based on understanding their commercial environment and
+                      regulatory impact.
+                      </p>  
+                      <h5 class="date">2015 - 2016</h5>
+                    </div>
+                </div>
+              </div>
+
+            <div class="experience-circle">
+              <img src="./resources/images/parliament.jpg" alt="parliament at night" class="image" style="width:100%">
+              <div class="experience-location">
+                <div class="text-circle">
+                  <h4 class="employer">Politics - Houses of Parliament</h4>
+                  <p>As a Senior Parliamentary Researcher I worked in the Houses of Parliament where I composed bespoke
+                      briefings for MPs on HM Treasury policies, including banking, consumer credit and pensions reforms alongside drafting correspondence to constituents on HM Treasury matters.
+                  </p>
+                  <h5 class="date">2013 - 2015</h5>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </section>
+
+      <!--Footer-->
 
     <footer>
-      <ul class="left-nav">
-        <li><a>&copy; Ross Penstone-Smith</a></li>
-      </ul>
-      <ul class="mid-nav">
-        <li><a href="https://www.linkedin.com/in/ross-penstone-smith-9b9682274/"><i class="fa-brands fa-linkedin fa-2xl" title="linkedin" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.instagram.com/rlpsmith/?hl=en"><i class="fa-brands fa-instagram fa-2xl" title="instagram" aria-hidden="true"></i></a></li>
-        <li><a href="https://github.com/rpenstonesmith"><i class="fa-brands fa-github fa-2xl" title="github" aria-hidden="true"></i></a></li>  
-        <li><a href="https://x.com/rlp_smith"><i class="fa-brands fa-x-twitter fa-2xl" title="x" aria-hidden="true"></i></a></li>
-      </ul>
-        <ul class="right-nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>  
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-  </footer>
+        <ul class="left-nav">
+          <li><a>&copy; Ross Penstone-Smith</a></li>
+        </ul>
 
-<!--Javascript-->
+        <ul class="mid-nav">
+          <li><a href="https://www.linkedin.com/in/ross-penstone-smith-9b9682274/"><i class="fa-brands fa-linkedin fa-2xl" title="linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/rlpsmith/?hl=en"><i class="fa-brands fa-instagram fa-2xl" title="instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/rpenstonesmith"><i class="fa-brands fa-github fa-2xl" title="github" aria-hidden="true"></i></a></li>  
+          <li><a href="https://x.com/rlp_smith"><i class="fa-brands fa-x-twitter fa-2xl" title="x" aria-hidden="true"></i></a></li>
+        </ul>
 
-    <script src="script.js"></script>
-
+          <ul class="right-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>  
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
+  
 </body>
 </html>
