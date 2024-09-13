@@ -158,7 +158,6 @@ h6 {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: #008f11;
   height: 100dvh;
 }
 
@@ -308,7 +307,7 @@ h6 {
 
 @media only screen and (max-width: 768px) {
   .projects {
-    flex-flow: column;
+    flex-wrap: wrap;
     padding: 3rem 3rem;
   }
 
@@ -339,17 +338,8 @@ h6 {
   position: relative;
   display: flex;
   justify-content: flex-start;
-}
-
-.experience-card {
+  flex-direction: column;
   padding: 1rem 3rem 3rem 3rem;
-}
-
-.experience-container {
-  display: flex;
-  flex-flow: wrap;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 .experience h2 {
@@ -359,9 +349,18 @@ h6 {
   margin: 2rem 0;
 }
 
+.experience-container {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .experience-circle {
   position: relative;
-  width: 30%;
+  width: 330px;
+  height: auto;
+  margin: 1rem;
 }
 
 .experience-circle .image {
@@ -375,14 +374,12 @@ h6 {
 }
 
 .experience-location {
-  transition: .5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
   width: 90%;
   height: 90%;
   border-radius: 50%;
@@ -403,7 +400,6 @@ h6 {
   height: 85%;
   border-radius: 50%;
   align-content: center;
-
 }
 
 .experience-circle:hover .image {
@@ -433,7 +429,30 @@ h5.date {
 }
 
 @media only screen and (max-width: 1140px) {
+  .experience {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .experience-circle {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .experience-circle {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h4.employer {
+    margin-top: 1rem;
+  }
   
+  .text-circle p {
+    display: none;
+  }
 }
 
 /* Footer */
