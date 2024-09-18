@@ -8,6 +8,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/fb18def344.js" crossorigin="anonymous"></script>
+    <script id="script" src="script.js" async></script>
     <title>Ross Penstone-Smith</title>
 </head>
 
@@ -20,7 +21,7 @@
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
-      <a class="contact-btn" href="#contact">Contact</a>
+      <a href="#contact" class="contact-btn">Contact</a>
     </div>
   </nav>
 </header>
@@ -51,10 +52,12 @@
         <div class="content">
           <h2>Responsive wepage</h2>
           <h3>A response webpage built using HTML and CSS. Utillising media queries to produce a responsive navigation bar, main content and footer</h3>
-          <h6>Skills:</h6>
+          <h6>Skills used:</h6>
         <div class="skill-icon">
           <i class="fa-brands fa-html5 fa-2xl" title="html5" aria-hidden="true"></i>
           <i class="fa-brands fa-css3-alt fa-2xl" title="css3" aria-hidden="true"></i>
+          <i class="fa-brands fa-git fa-2xl" title="git" aria-hidden="true"></i>
+          <i class="fa-brands fa-github fa-2xl" title="github" aria-hidden="true"></i>
         </div>
         </div>
       </div>
@@ -68,7 +71,7 @@
         <div class="content">
           <h2>Player Counter</h2>
           <h3>A simple webpage using basic HTML, CSS and Javascript to count the numnber of players used by my favourite football team.</h3>
-          <h6>Skills: </h6>
+          <h6>Skills used: </h6>
           <div class="skill-icon">
             <i class="fa-brands fa-html5 fa-2xl" title="html5" aria-hidden="true"></i>
             <i class="fa-brands fa-css3-alt fa-2xl" title="css3" aria-hidden="true"></i>
@@ -93,7 +96,7 @@
               <div class="experience-location">
                 <div class="text-circle">
                 <h4 class="employer">Education - Primary School</h4>
-                <p>For the past 7 years I've worked as a Primary School Teacher in year 5 and 6. Since the birth of my second son, I've worked as a supply teacher, covering upper KS2.</p>
+                <p>For the past 8 years I've worked as a Primary School Teacher in year 5 and 6. Since the birth of my second son, I've worked as a supply teacher, covering upper KS2.</p>
                 <h5 class="date">2016 - Current</h5>
               </div>
               </div>
@@ -125,8 +128,57 @@
                 </div>
               </div>
             </div>
-            
     </section>
+
+    <!--Contact-->
+
+    <section class="contact" id="contact">
+
+      <div class="contact-container">
+        <h2 class="subheading">Contact me...</h2>
+      </div>
+    
+      <div class="contact-wrapper">
+    
+     <!--Contact Form-->
+    
+      <section class="form-container">
+        <h3 class="email-header">...via email</h3>
+          <form action="action_page.php">
+        
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email..">
+        
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+      </section>
+
+    <!--Socials-->
+
+      <section class="social-container">
+        <h3 class="email-header">...via social media</h3>
+        <ul class="social-btns">
+          <div class="column">
+            <a href="https://x.com/rlp_smith" target="_blank" title="x" aria-hidden="true"><i class="fa-brands fa-x-twitter fa-5x"></i></a>
+            <a href="https://www.linkedin.com/in/ross-penstone-smith-9b9682274/" target="_blank" title="linkedin" aria-hidden="true"><i class="fa-brands fa-linkedin fa-5x"></i></a>
+          </div>
+          <div class="column">
+            <a href="https://www.instagram.com/rlpsmith/?hl=en" target="_blank" title="instagram" aria-hidden="true"><i class="fa-brands fa-instagram fa-5x"></i></a>
+            <a href="https://github.com/rpenstonesmith" target="_blank" title="github" aria-hidden="true"><i class="fa-brands fa-github fa-5x"></i></a>
+          </div>
+        </ul>
+      </section>
+
+    </div>
+    
+  </section>
 
 <!--Footer-->
 
