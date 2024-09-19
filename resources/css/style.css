@@ -3,22 +3,8 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: #1b2526;
-  transition: background 0.2s linear;
+  scroll-snap-type: y mandatory;
 }
-
-/*
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  min-height: 100vh;
-  margin: 0;
-  transition: background 0.2s linear;
-}
-
-*/
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -90,7 +76,7 @@ h6 {
 
 /* Header */
 
-.header {
+header {
   overflow: hidden;
   padding: 1rem 0 0 0;
   font-family: 'Anonymous Pro', monospace;
@@ -173,6 +159,7 @@ a.contact-btn {
   display: flex;
   align-items: center;
   height: 100dvh;
+  scroll-snap-align: center;
 }
 
 .hero-text {
@@ -250,6 +237,7 @@ a.contact-btn {
   flex-direction: column;
   justify-content: flex-start;
   padding: 3rem 3rem;
+  scroll-snap-align: center;
 }
 
 .projects h2 {
@@ -354,6 +342,7 @@ a.contact-btn {
   justify-content: flex-start;
   flex-direction: column;
   padding: 1rem 3rem 3rem 3rem;
+  scroll-snap-align: center;
 }
 
 .experience h2 {
@@ -481,6 +470,7 @@ h5.date {
   justify-content: flex-start;
   padding: 3rem 3rem;
   background-color: #62A685;
+  scroll-snap-align: center;
 }
 
 .contact-container h2 {
