@@ -2,13 +2,14 @@
 
 ## Contents
 
-- [This is ](#overview)
+- [Overview](#overview)
 - [Built With](#built-with)
-- [Features](#features)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
+
+This is version 1 of my personal portfolio project, showcasing my initial learning of HTML and CSS alongside a couple of projects using these skills too alongside a little javascript. I plan to add more projects as I work on them and more Javascript to the website itself as I progress in my front-end developer journey.
 
 <!-- TODO: Add a screenshot of the live project.
     1. Link to a 'live demo.'
@@ -19,16 +20,28 @@
 
 ### Built With
 
-<!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
+This website is built with HTML and CSS. Javascript coming soon!
 
-## Features
+![Screenshot 2024-09-19 at 08 25 51](https://github.com/user-attachments/assets/85b4301a-530f-4b94-939f-020c563377c9)
 
-<!-- TODO: List what specific 'user problems' that this application solves. -->
 
 ## Contact
 
-<!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
+If you would like to contact me, please do so on:
+- <img align="center" width="25px" src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000"> Linkedin: https://www.linkedin.com/in/ross-penstone-smith-9b9682274/
+- <img align="center" width="25px" src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000"> Github: https://github.com/rpenstonesmith
+- <img align="center" width="25px" src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000"> Instagram: https://www.instagram.com/rlpsmith/?hl=en
+- <img align="center" width="25px" src="https://img.icons8.com/?size=100&id=cMRBi0rI3iwb&format=png&color=000000"> Twitter: https://x.com/rlp_smith
 
 ## Acknowledgements
 
-<!-- TODO: List any blog posts, tutorials or plugins that you may have used to complete the project. Only list those that had a significant impact. Obviously, we all 'Google' stuff while working on our things, but maybe something in particular stood out as a 'major contributor' to your skill set for this project. -->
+A big shout out to the following websites I took for inspiration from and looked into their code for how to produce my own similar results:
+- https://brittanychiang.com/
+- https://nathanc90.github.io/
+- https://www.adhamdannaway.com/
+
+Similarly, big thanks to the following webpages I looked at endless times to figure out how to do certain things within my project:
+- https://www.codecademy.com/
+- https://www.w3schools.com/
+- https://developer.mozilla.org/
+- https://stackoverflow.com/
