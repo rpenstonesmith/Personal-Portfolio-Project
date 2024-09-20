@@ -1,9 +1,18 @@
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
 body {
   height: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: #1b2526;
-  scroll-snap-type: y mandatory;
+}
+
+header, section {
+    scroll-snap-align: center;
 }
 
 h1 {
