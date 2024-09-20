@@ -11,13 +11,6 @@
 
 This is version 1 of my personal portfolio project, showcasing my initial learning of HTML and CSS alongside a couple of projects using these skills too alongside a little javascript. I plan to add more projects as I work on them and more Javascript to the website itself as I progress in my front-end developer journey.
 
-<!-- TODO: Add a screenshot of the live project.
-    1. Link to a 'live demo.'
-    2. Describe your overall experience in a couple of sentences.
-    3. List a few specific technical things that you learned or improved on.
-    4. Share any other tips or guidance for others attempting this or something similar.
- -->
-
 ### Built With
 
 This website is built with HTML and CSS. Javascript coming soon!
