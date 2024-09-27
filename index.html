@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="resources/css/style.css" rel="stylesheet"/>
+    <link href="resources/css/toggle-switch.css" rel="stylesheet"/>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
@@ -16,14 +17,24 @@
 
 <header>
   <nav class="header">
-    <a class="logo anim-typewriter">Ross Penstone-Smith</a>
-    <div class="header-right">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact" class="contact-btn">Contact</a>
-    </div>
+    <p class="logo anim-typewriter">Ross Penstone-Smith</p>
+    <ul class="header-right">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="contact-btn">Contact</a></li>
+    </ul>
   </nav>
+
+  <div class="controls">
+    <label class="toggle-switch">
+      Dark Mode
+      <input type="checkbox" id="dark-mode-toggle">
+      <div class="toggle-switch-border">
+        <div class="toggle-switch-dot"></div>
+      </div>
+    </label>
+  </div>
 </header>
 
 <!--Body-->
@@ -53,7 +64,7 @@
           </a>
         </div>
         <div class="content">
-          <h2>Responsive wepage</h2>
+          <h2>Responsive Webpage</h2>
           <h3>A response webpage built using HTML and CSS. Utillising media queries to produce a responsive navigation bar, main content and footer</h3>
           <h6>Skills used:</h6>
         <div class="skill-icon">
