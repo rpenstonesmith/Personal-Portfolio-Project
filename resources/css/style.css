@@ -14,20 +14,31 @@ body {
   color: var(--primary);
 
   --dark-background: #1b2526;
+  --dark-background2: #5D797B;
   --dark-primary: #ccd6f6;
+  --dark-primary2: #1b2526;
   --dark-green: #62A685;
+  --dark-white: #ffffff;
 
   --light-background: #45a4a2;
+  --light-background2: #62A685;
   --light-primary: #ffffff;
+  --light-primary2: #ffffff;
   --light-green: #fbd44a;
+  --light-white: #fbd44a;
 
   --background: var(--dark-background);
+  --background2: var(--dark-background2);
   --primary: var(--dark-primary);
+  --primary2: var(--dark-primary2);
   --green: var(--dark-green);
+  --white: var(--dark-white);
 }
 
+
+
 header, section {
-    scroll-snap-align: center;
+  scroll-snap-align: center;
 }
 
 h1 {
@@ -69,7 +80,7 @@ h6 {
 p {
   font-style: normal;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 /* Animation */
@@ -115,7 +126,7 @@ nav .logo {
   white-space: nowrap;
   overflow: hidden;
   font-size: 1rem;
-  color: var(--green);
+  color: var(--primary);
   text-align: left;
   padding: 0;
 }
@@ -201,14 +212,16 @@ header .controls {
   align-items: center;
   height: 100dvh;
   scroll-snap-align: center;
+  margin: 1rem 0 0 0;
 }
 
 .hero-text {
   text-align: left;
-  padding: 0;
+  padding: 0 3rem 0 3rem;
   width: 45%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .main {
@@ -268,7 +281,7 @@ header .controls {
 /* Projects */
 
 .projects {
-  background-color: #5D797B;
+  background-color: var(--background2);
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -283,7 +296,7 @@ header .controls {
 .projects h2 {
   font-family: 'Anonymous Pro', monospace;
   font-size: 2rem;
-  color: var(--background);
+  color: var(--primary2);
   margin: 0 0 1rem 0;
 }
 
@@ -297,7 +310,7 @@ header .controls {
 .project {
   padding: 2rem 2rem;
   margin: 2rem 2rem;
-  background-color: #ffffff;
+  background-color: var(--white);
   width: 30%;
 }
 
@@ -381,7 +394,7 @@ header .controls {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 3rem 3rem 3rem;
   scroll-snap-align: center;
 }
 
@@ -431,7 +444,6 @@ header .controls {
 }
 
 .text-circle {
-  transition: .5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
