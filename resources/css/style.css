@@ -7,20 +7,22 @@ html {
 body {
   height: 100%;
   margin: 0;
-  padding: 0 3rem; 
+  padding: 0; 
   font-family: "Roboto", sans-serif;
 
   background: var(--background);
   color: var(--primary);
 
-  --dark-background: #1b2526;
+  --dark-background: linear-gradient(0deg, rgba(93,121,123,1) 0%, rgba(27,37,38,1) 100%);
+  --dark-background3: #1b2526;
   --dark-background2: #5D797B;
   --dark-primary: #ccd6f6;
   --dark-primary2: #1b2526;
   --dark-green: #62A685;
   --dark-white: #ffffff;
 
-  --light-background: #45a4a2;
+  --light-background: linear-gradient(0deg, rgba(98,166,133,1) 0%, rgba(69,164,162,1) 100%);
+  --light-background3: #45a4a2;
   --light-background2: #62A685;
   --light-primary: #ffffff;
   --light-primary2: #ffffff;
@@ -28,6 +30,7 @@ body {
   --light-white: #fbd44a;
 
   --background: var(--dark-background);
+  --background3: var(--dark-background3);
   --background2: var(--dark-background2);
   --primary: var(--dark-primary);
   --primary2: var(--dark-primary2);
@@ -115,7 +118,7 @@ p {
 
 nav {
   overflow: hidden;
-  padding: 1rem 0;
+  padding: 1rem 3rem;
   font-family: 'Anonymous Pro', monospace;
 }
 
@@ -165,7 +168,7 @@ header ul a:hover {
 }
 
 a.contact-btn {
-  margin: 1rem;
+  margin: 0 0 0 1rem;
 }
 
 .contact-btn a:hover {
@@ -203,7 +206,8 @@ header .controls {
 /* Hero Section */
 
 .hero-image {
-  background-image: url('../images/green-code.jpg');
+  /* background-image: url('../images/green-code.jpg'); */
+  background: var(--background);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -388,7 +392,7 @@ header .controls {
 /* Experience */
 
 .experience {
-  background-color: var(--background);
+  background-color: var(--background3);
   background-size: cover;
   position: relative;
   display: flex;
@@ -528,7 +532,7 @@ h5.date {
 .contact-container h2 {
   font-family: 'Anonymous Pro', monospace;
   font-size: 2rem;
-  color: var(--background);
+  color: #ffffff;
   margin: 0 0 1rem 0;
 }
 
@@ -537,7 +541,7 @@ h5.date {
   font-size: 1.5rem;
   font-weight: 100;
   margin: 1rem 0 1rem 0;
-  color: var(--background);
+  color: #ffffff;
 }
 
 .contact-wrapper {
@@ -655,7 +659,7 @@ input[type=email] {
 }
 
 input[type=submit] {
-  background-color: var(--background);
+  background-color: var(--background3);
   color: #ffffff;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -664,11 +668,11 @@ input[type=submit] {
 }
 
 label {
-  color: var(--background);
+  color: #ffffff;
 }
 
 input[type=submit]:hover {
-  background-color: var(--primary);
+  background-color: var(--background3);
   color: var(--background);
 }
 
@@ -681,7 +685,7 @@ footer {
   display: flex;
   list-style-type: none;
   text-align: center;
-  padding: 0;
+  padding: 0 3rem;
   justify-content: space-between;
 }
 
@@ -692,7 +696,7 @@ ul.left-nav {
 .left-nav li {
   display: inline-block;
   font-family: 'Anonymous Pro', monospace;
-  color: var(--primary);
+  color: #ffffff;
   text-align: left;
   padding: 1rem 0;
   margin: 0px;
@@ -713,7 +717,7 @@ ul.mid-nav {
 }
 
 .mid-nav a {
-  color: var(--primary);
+  color: #ffffff;
 }
 
 ul.right-nav {
@@ -730,7 +734,7 @@ ul.right-nav {
 .right-nav a {
   text-decoration: none;
   font-family: 'Anonymous Pro', monospace;
-  color: var(--primary);
+  color: #ffffff;
 }
 
 .mid-nav a:hover {
