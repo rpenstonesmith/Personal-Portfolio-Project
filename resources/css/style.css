@@ -1,7 +1,6 @@
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -13,21 +12,23 @@ body {
   background: var(--background);
   color: var(--primary);
 
-  --dark-background: linear-gradient(0deg, rgba(93,121,123,1) 0%, rgba(27,37,38,1) 100%);
-  --dark-background3: #1b2526;
+  --dark-background: linear-gradient(180deg, rgba(27,37,38,1) 15%, rgba(98,166,133,1) 100%);
   --dark-background2: #5D797B;
+  --dark-background3: #1b2526;
   --dark-primary: #ccd6f6;
   --dark-primary2: #1b2526;
   --dark-green: #62A685;
   --dark-white: #ffffff;
+  --dark-button: #1b2526;
 
   --light-background: linear-gradient(0deg, rgba(98,166,133,1) 0%, rgba(69,164,162,1) 100%);
-  --light-background3: #45a4a2;
   --light-background2: #62A685;
+  --light-background3: #45a4a2;
   --light-primary: #ffffff;
   --light-primary2: #ffffff;
   --light-green: #fbd44a;
   --light-white: #fbd44a;
+  --light-button: #fbd44a;
 
   --background: var(--dark-background);
   --background3: var(--dark-background3);
@@ -36,12 +37,12 @@ body {
   --primary2: var(--dark-primary2);
   --green: var(--dark-green);
   --white: var(--dark-white);
+  --button: var(--dark-button);
 }
 
-
-
-header, section {
-  scroll-snap-align: center;
+header, footer {
+  background-color: var(--background3);
+  color: var(--background2);
 }
 
 h1 {
@@ -200,14 +201,14 @@ a.contact-btn {
 header .controls {
   display: flex;
   justify-content: end;
-  padding: 0;
+  padding: 0 0 1rem 0;
 }
 
 /* Hero Section */
 
 .hero-image {
   /* background-image: url('../images/green-code.jpg'); */
-  background: var(--background);
+  background-color: var(--background);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -216,7 +217,7 @@ header .controls {
   align-items: center;
   height: 100dvh;
   scroll-snap-align: center;
-  margin: 1rem 0 0 0;
+  margin: 0;
 }
 
 .hero-text {
@@ -250,7 +251,7 @@ header .controls {
 @media only screen and (max-width: 768px) {
   .hero-text {
     text-align: left;
-    padding: 3rem 0;
+    padding: 3rem 3rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -471,18 +472,18 @@ header .controls {
 }
 
 h4.employer {
-  color: var(--background);
+  color: #1b2526;
   margin: 2rem 0 1rem 0;
   font-size: 1.25rem;
 }
 
 .experience-location p {
   font-size: 0.75rem;
-  color: var(--background);
+  color: #1b2526;
 }
 
 h5.date {
-  color: var(--primary);
+  color: #1b2526;
   margin: 1rem 0 0 0;
   font-size: 1rem;
 }
@@ -525,7 +526,7 @@ h5.date {
   flex-direction: column;
   justify-content: flex-start;
   padding: 3rem 3rem;
-  background-color: var(--green);
+  background-color: #62A685;
   scroll-snap-align: center;
 }
 
@@ -581,6 +582,7 @@ h5.date {
   margin-top: 0.5rem;
   vertical-align: middle;
   width: 100%;
+  
 }
 
 .social-btns .fa-brands {
@@ -659,7 +661,7 @@ input[type=email] {
 }
 
 input[type=submit] {
-  background-color: var(--background3);
+  background-color: var(--button);
   color: #ffffff;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -672,7 +674,7 @@ label {
 }
 
 input[type=submit]:hover {
-  background-color: var(--background3);
+  background-color: var(--button);
   color: var(--background);
 }
 
@@ -680,7 +682,6 @@ input[type=submit]:hover {
 
 footer {
   border-top-style: solid;
-  color: #64768B;
   border-width: 1px;
   display: flex;
   list-style-type: none;
@@ -696,7 +697,7 @@ ul.left-nav {
 .left-nav li {
   display: inline-block;
   font-family: 'Anonymous Pro', monospace;
-  color: #ffffff;
+  color: var(--primary);
   text-align: left;
   padding: 1rem 0;
   margin: 0px;
@@ -717,7 +718,7 @@ ul.mid-nav {
 }
 
 .mid-nav a {
-  color: #ffffff;
+  color: var(--primary);
 }
 
 ul.right-nav {
@@ -734,7 +735,7 @@ ul.right-nav {
 .right-nav a {
   text-decoration: none;
   font-family: 'Anonymous Pro', monospace;
-  color: #ffffff;
+  color: var(--primary);
 }
 
 .mid-nav a:hover {

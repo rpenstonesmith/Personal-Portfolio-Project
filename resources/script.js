@@ -22,4 +22,5 @@ class CssPropControl {
     bodyCssProps.set('--primary2', bodyCssProps.get(`--${mode}-primary2`))
     bodyCssProps.set('--green', bodyCssProps.get(`--${mode}-green`))
     bodyCssProps.set('--white', bodyCssProps.get(`--${mode}-white`))
+    bodyCssProps.set('--button', bodyCssProps.get(`--${mode}-button`))
   })
