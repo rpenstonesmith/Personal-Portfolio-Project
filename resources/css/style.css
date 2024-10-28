@@ -101,7 +101,7 @@ p {
   }
 
   to {
-    width: 14em;
+    width: 11.5em;
   }
 }
 
@@ -119,13 +119,24 @@ p {
 
 nav {
   overflow: hidden;
-  padding: 1rem 3rem;
+  padding: 1rem 3rem 0rem 3rem;
   font-family: 'Anonymous Pro', monospace;
+  justify-content: space-between;
+  color: var(--primary);
+  text-align: center;
+}
+
+nav a {
+  float: left;
+}
+
+.header-right {
+  float: right;
 }
 
 nav .logo {
   width: 24em;
-  margin: 1rem 1rem 1rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
   border-right: solid #ffffffbf;
   white-space: nowrap;
   overflow: hidden;
@@ -135,35 +146,22 @@ nav .logo {
   padding: 0;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  color: var(--primary);
-  text-align: center;
-}
-
-header nav ul {
-  padding: 0;
-  display: flex;
-  align-items: center; 
-}
-
-header nav li {
+nav li {
   display: inline;
-  margin-inline-start: 1rem;
+  
   font-family: 'Anonymous Pro', monospace;
   font-weight: 100;
 }
 
-header nav li a {
+nav li a {
   text-decoration: none;
-  margin: 1rem;
+  margin: 0rem 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid transparent;
   color: var(--primary);
 }
 
-header ul a:hover {
+.header-right a:hover {
   border-bottom: 1px solid var(--green);
   color: var(--green);;
 }
@@ -177,23 +175,39 @@ a.contact-btn {
 }
 
 @media only screen and (max-width: 768px) {
-  a.logo {
+  .logo.anim-typewriter {
     display: none;
+  }
+
+  nav.header {
+    padding: 1rem 3rem 0rem 1rem;
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .header-right a {
+@media only screen and (max-width: 520px) {
+  nav.header {
+    padding: 1rem 3rem 1rem 0rem;
+  }
+
+  .logo.anim-typewriter {
+    display: none;
+  }
+
+  nav a {
     float: none;
     display: block;
     text-align: left;
     margin-left: 0;
   }
 
+  nav li {
+    margin-inline-start: 1rem;
+  }
+
   .header-right {
     float: none;
-    padding-left: 1rem;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -626,7 +640,10 @@ h5.date {
 .form-container {
   padding: 1rem;
   font-family: 'Anonymous Pro', monospace;
-  width: 60%;
+}
+
+.contact-wrapper {
+  justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {
