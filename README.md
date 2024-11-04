@@ -9,13 +9,13 @@
 
 ## Overview
 
-This is version 1 of my personal portfolio project, showcasing my initial learning of HTML and CSS alongside a couple of projects using these skills too alongside a little javascript. I plan to add more projects as I work on them and more Javascript to the website itself as I progress in my front-end developer journey.
+This is version 1 of my personal portfolio project, showcasing my initial learning of HTML, CSS and Javascript alongside a few projects using these skills. I plan to add more projects as I work on them and more Javascript to the website itself as I progress in my front-end developer journey.
 
 ### Built With
 
-This website is built with HTML and CSS. Javascript coming soon!
+This website is built with HTML, CSS and a little Javascript.
 
-![Screenshot 2024-09-19 at 08 25 51](https://github.com/user-attachments/assets/85b4301a-530f-4b94-939f-020c563377c9)
+![Screenshot 2024-11-04 at 11 27 41](https://github.com/user-attachments/assets/7df6bbdf-a5fa-426c-80b5-ce7ac56336a3)
 
 
 ## Contact
