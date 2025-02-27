@@ -221,14 +221,13 @@ header .controls {
 /* Hero Section */
 
 .hero-image {
-  /* background-image: url('../images/green-code.jpg'); */
+  /* background-image: url('../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg'); */
   background-color: var(--background);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   display: flex;
-  align-items: center;
   height: 100dvh;
   scroll-snap-align: center;
   margin: 0;
@@ -237,10 +236,14 @@ header .controls {
 .hero-text {
   text-align: left;
   padding: 0 3rem 0 3rem;
-  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*
+  background-image: url('../images/jeremy-thomas-E0AHdsENmDg-unsplash.jpg');
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  */
 }
 
 .main {
@@ -251,14 +254,16 @@ header .controls {
 .name {
   margin: 0;
   color: var(--green);
+  font-size: 6rem;
+  font-weight: 900;
 }
 
 .title {
   margin: 0 0 0 0;
   font-family: "Playwrite CU", cursive;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
+  font-size: 4rem;
   color: var(--primary);
 }
 
@@ -269,6 +274,14 @@ header .controls {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  .title {
+    font-size: 2rem;
   }
 }
 
