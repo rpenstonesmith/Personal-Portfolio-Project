@@ -1,6 +1,7 @@
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
@@ -126,6 +127,10 @@ nav {
   text-align: center;
 }
 
+.icon {
+  display: none;
+}
+
 nav a {
   float: left;
 }
@@ -148,7 +153,6 @@ nav .logo {
 
 nav li {
   display: inline;
-  
   font-family: 'Anonymous Pro', monospace;
   font-weight: 100;
 }
@@ -186,9 +190,47 @@ a.contact-btn {
 
 @media only screen and (max-width: 520px) {
   nav.header {
+    margin-top: 1rem;
     padding: 1rem 3rem 1rem 0rem;
   }
 
+@media only screen and (max-width: 520px) {
+  .header-right li:not(:last-child) {
+    display: none;
+  }
+
+  .header-right li.icon {
+    float: right;
+    display: block;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .header-right li {
+    display: none;
+    margin: 0rem 1rem 1rem 1rem;
+  }
+
+  .header-right li.icon {
+    display: block;
+  }
+
+  .header-right.responsive {
+    position: relative;
+  }
+
+  .header-right.responsive li {
+    display: block;
+    text-align: left;
+  }
+
+  .header-right.responsive li.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
   .logo.anim-typewriter {
     display: none;
   }
@@ -268,10 +310,12 @@ header .controls {
 }
 
 @media only screen and (max-width: 768px) {
+  .hero-image {
+    height: 100%;
+  }
   .hero-text {
     text-align: left;
-    padding: 3rem 3rem;
-    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
   }
@@ -292,7 +336,7 @@ header .controls {
 
   .hero-text {
     text-align: left;
-    padding: 3rem 0 3rem 1rem;
+    padding: 3rem 1rem 3rem 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -370,7 +414,7 @@ header .controls {
 }
 
 .project h2 {
-  font-size: 2rem;
+  font-size: 4vw;
   color: #4a4a4a;
   margin: 0 0 1rem 0;
 }
@@ -420,6 +464,7 @@ header .controls {
 /* Experience */
 
 .experience {
+  height: 100%;
   background-color: var(--background3);
   background-size: cover;
   position: relative;
@@ -500,7 +545,7 @@ header .controls {
 
 h4.employer {
   color: #1b2526;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 0 0;
   font-size: 1.25rem;
 }
 
@@ -535,7 +580,31 @@ h5.date {
 @media only screen and (max-width: 480px) {
   h4.employer {
     margin-top: 1rem;
+    font-size: 1rem;
   }
+
+  h5.date {
+  color: #1b2526;
+  margin: 0.75rem 0 0 0;
+  font-size: 0.75rem;
+}
+  
+  .text-circle p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  h4.employer {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+  }
+
+  h5.date {
+  color: #1b2526;
+  margin: 0.5rem 0 0 0;
+  font-size: 0.75rem;
+}
   
   .text-circle p {
     display: none;

@@ -18,17 +18,20 @@
 <header>
   <nav class="header">
     <a class="logo anim-typewriter">Ross Penstone-Smith</a>
-    <ul class="header-right">
+    <ul class="header-right" id="headerRight">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact" class="contact-btn">Contact</a></li>
+      <li class="icon"><a href="javascript:void(0);" onclick="headerNav()">
+          <i class="fa fa-bars" id="menu-icon"></i>
+          </a></li>
     </ul>
   </nav>
 
   <div class="controls">
     <label class="toggle-switch">
-      Light Mode
+      <span id="mode-label">Light Mode</span>
       <input type="checkbox" id="dark-mode-toggle">
       <div class="toggle-switch-border">
         <div class="toggle-switch-dot"></div>
@@ -63,9 +66,10 @@
             <img src="./resources/images/Calculator.png"/>
           </a>
         </div>
+
         <div class="content">
-          <h2>Simple Calculator</h2>
-          <h3>A simple calculator built using HTML, CSS and Javascript, utilising simple Javascript functions to deliver a simple, easy-to-use calculator.</h3>
+          <h2>Calculator</h2>
+          <h3>A calculator built using HTML, CSS and Javascript, utilising simple Javascript functions to deliver a simple, easy-to-use calculator.</h3>
           <h6>Skills used:</h6>
         <div class="skill-icon">
           <i class="fa-brands fa-html5 fa-2xl" title="html5" aria-hidden="true"></i>
@@ -83,8 +87,9 @@
             <img src="./resources/images/To Do List.png"/>
           </a>
         </div>
+
         <div class="content">
-          <h2>To Do List</h2>
+          <h2>ToDoList</h2>
           <h3>A simple To Do List made with HTML, CSS and Javascript. Basic functionality to add, check-off and remove list items.</h3>
           <h6>Skills used:</h6>
         <div class="skill-icon">
@@ -233,7 +238,7 @@
 
   <div class="contact-wrapper">
 
- <!--Contact Form-->
+<!--Contact Form-->
 
   <section class="form-container">
     <h3 class="email-header">...via email</h3>
