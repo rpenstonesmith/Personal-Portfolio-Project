@@ -13,7 +13,7 @@ class CssPropControl {
 const bodyCssProps = new CssPropControl(document.body);
 
 let toggle = document.querySelector("#dark-mode-toggle");
-let label = document.querySelector("#mode-label"); // Get the label span
+let label = document.querySelector("#mode-label"); 
 
 toggle.addEventListener("click", () => {
   let mode = toggle.checked ? "light" : "dark";
