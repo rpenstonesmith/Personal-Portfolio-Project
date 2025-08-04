@@ -21,7 +21,7 @@ toggle.addEventListener("click", () => {
   // Update label text
   label.textContent = toggle.checked ? "Dark Mode" : "Light Mode";
 
-  // Apply CSS custom properties based on mode
+  // Apply CSS custom colour properties based on mode
   bodyCssProps.set("--background", bodyCssProps.get(`--${mode}-background`));
   bodyCssProps.set("--background2", bodyCssProps.get(`--${mode}-background2`));
   bodyCssProps.set("--background3", bodyCssProps.get(`--${mode}-background3`));
@@ -32,18 +32,9 @@ toggle.addEventListener("click", () => {
   bodyCssProps.set("--button", bodyCssProps.get(`--${mode}-button`));
 });
 
-
-function headerNav() {
-  const nav = document.getElementById("headerRight");
-  const icon = document.getElementById("menu-icon");
-
-  nav.classList.toggle("responsive");
-
-  if (nav.classList.contains("responsive")) {
-    icon.classList.remove("fa-bars");
-    icon.classList.add("fa-times");
-  } else {
-    icon.classList.remove("fa-times");
-    icon.classList.add("fa-bars");
+// Hamburger menu
+  function headerNav() {
+    const links = document.querySelector('.links');
+    links.classList.toggle('show-links');
   }
-}
+
