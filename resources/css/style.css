@@ -362,7 +362,7 @@ header li a {
 
 .project {
   padding: 2rem;
-  margin: 2rem;
+  margin: 2rem 0.5rem;
   background-color: var(--white);
   width: 30%;
   border-radius: 0.25rem;
@@ -552,6 +552,10 @@ h5.date {
 }
 
 @media only screen and (max-width: 480px) {
+  .experience {
+    padding: 1rem 1rem 3rem;
+  }
+
   h4.employer {
     margin-top: 1rem;
     font-size: 1rem;
@@ -624,6 +628,13 @@ h5.date {
 @media only screen and (max-width: 768px) {
   .form-container {
     width: 100%;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact {
+    padding: 3rem 1rem 1rem;
   }
 }
 
