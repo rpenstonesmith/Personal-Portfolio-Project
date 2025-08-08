@@ -38,3 +38,31 @@ toggle.addEventListener("click", () => {
     links.classList.toggle('show-links');
   }
 
+// Carousel
+document.addEventListener("DOMContentLoaded", () => {
+  const projects = document.querySelectorAll(".project");
+  const container = document.querySelector(".project-container");
+  const prevBtn = document.querySelector(".carousel-btn.prev");
+  const nextBtn = document.querySelector(".carousel-btn.next");
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    const slideWidth = projects[0].offsetWidth;
+    const offset = -currentIndex * slideWidth;
+    container.style.transform = `translateX(${offset}px)`;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % projects.length;
+    updateCarousel();
+  });
+
+  // === Init ===
+  updateCarousel();
+});
