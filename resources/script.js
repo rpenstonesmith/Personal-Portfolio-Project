@@ -13,7 +13,7 @@ class CssPropControl {
 const bodyCssProps = new CssPropControl(document.body);
 
 let toggle = document.querySelector("#dark-mode-toggle");
-let label = document.querySelector("#mode-label"); 
+let label = document.querySelector("#mode-label");
 
 toggle.addEventListener("click", () => {
   let mode = toggle.checked ? "light" : "dark";
@@ -33,10 +33,10 @@ toggle.addEventListener("click", () => {
 });
 
 // Hamburger menu
-  function headerNav() {
-    const links = document.querySelector('.links');
-    links.classList.toggle('show-links');
-  }
+function headerNav() {
+  const links = document.querySelector(".links");
+  links.classList.toggle("show-links");
+}
 
 // Carousel
 document.addEventListener("DOMContentLoaded", () => {
@@ -67,5 +67,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateCarousel();
 });
-
-

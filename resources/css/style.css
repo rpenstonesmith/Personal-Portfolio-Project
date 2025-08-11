@@ -55,7 +55,13 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-style: normal;
   margin: 0;
 }
@@ -388,7 +394,8 @@ header li a {
   color: var(--white);
   padding: 1rem;
   cursor: pointer;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 @media only screen and (max-width: 480px) {
   .carousel-btn {
