@@ -1,277 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="resources/css/style.css" rel="stylesheet" />
+    <link href="resources/css/toggle-switch.css" rel="stylesheet" />
+    <link rel="stylesheet" href="" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/fb18def344.js"
+      crossorigin="anonymous"
+    ></script>
+    <script id="script" src="resources/script.js" async></script>
+    <title>Ross Penstone-Smith</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="resources/css/style.css" rel="stylesheet" />
-  <link href="resources/css/toggle-switch.css" rel="stylesheet" />
-  <link rel="stylesheet" href="">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-  </style>
-  <script src="https://kit.fontawesome.com/fb18def344.js" crossorigin="anonymous"></script>
-  <script id="script" src="resources/script.js" async></script>
-  <title>Ross Penstone-Smith</title>
-</head>
+  <body>
+    <!--Header-->
 
-<body>
+    <header>
+      <nav class="nav-center">
+        <div class="nav-header">
+          <a class="logo">Ross Penstone-Smith</a>
+          <button class="nav-toggle" onclick="headerNav()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
 
-<!--Header-->
+        <ul class="links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-<header>
-  <nav class="nav-center">
-    <div class="nav-header">
-      <a class="logo">Ross Penstone-Smith</a>
-      <button class="nav-toggle" onclick="headerNav()">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+          </li>
+        </ul>
+      </nav>
 
-    <ul class="links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <ul class="social-icons">
-      <li><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-github fa-2xl"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a></li>
-    </ul>
-  </nav>
-
-  <div class="controls">
-    <label class="toggle-switch">
-      <span id="mode-label">Light Mode</span>
-      <input type="checkbox" id="dark-mode-toggle">
-      <div class="toggle-switch-border">
-        <div class="toggle-switch-dot"></div>
+      <div class="controls">
+        <label class="toggle-switch">
+          <span id="mode-label">Light Mode</span>
+          <input type="checkbox" id="dark-mode-toggle" />
+          <div class="toggle-switch-border">
+            <div class="toggle-switch-dot"></div>
+          </div>
+        </label>
       </div>
-    </label>
-  </div>
-  </header>
+    </header>
 
-<!--Hero-->
+    <!--Hero-->
 
-  <section class="hero-image" id="about">
-    <div class="hero-text">
-      <h1 class="main"><span class="name">Ross Penstone-Smith</span></h1>
-      <h4 class="title">Front-End Developer</h4>
-    </div>
-  </section>
+    <section class="hero-image" id="about">
+      <div class="hero-text">
+        <h1 class="main"><span class="name">Ross Penstone-Smith</span></h1>
+        <h4 class="title">Front-End Developer</h4>
+      </div>
+    </section>
 
-<!--Projects-->
+    <!--Projects-->
 
-  <section class="projects" id="projects">
-    <h2 class="subheading">Projects built...</h2>
+    <section class="projects" id="projects">
+      <h2 class="subheading">Projects built...</h2>
 
-    <div class="carousel-wrapper">
-    <button class="carousel-btn prev">&#10094;</button>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev">&#10094;</button>
 
-    <div class="project-container">
+        <div class="project-container">
+          <article class="project">
+            <div class="image-container">
+              <a
+                href="https://github.com/rpenstonesmith/Calculator"
+                target="_blank"
+                alt="screenshot"
+                title="screenshot of calculator project"
+              >
+                <img
+                  src="./resources/images/Calculator.png"
+                  class="project-img"
+                />
+              </a>
+            </div>
+            <div class="content">
+              <h2>Calculator</h2>
+              <h3>
+                A calculator built using HTML, CSS and Javascript, utilising
+                simple Javascript functions to deliver a simple, easy-to-use
+                calculator.
+              </h3>
+              <h6>Skills used:</h6>
+              <div class="skill-icon">
+                <i class="fa-brands fa-html5 fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-css3-alt fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-js fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-git fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
 
-      <article class="project">
-        <div class="image-container">
-          <a href="https://github.com/rpenstonesmith/Calculator" target=_blank alt="screenshot"
-            title="screenshot of calculator project">
-            <img src="./resources/images/Calculator.png" class="project-img" />
-          </a>
+          <article class="project">
+            <div class="image-container">
+              <a
+                href="https://github.com/rpenstonesmith/To-Do-List"
+                target="_blank"
+                alt="screenshot"
+                title="screenshot of To Do List project"
+              >
+                <img
+                  src="./resources/images/To Do List.png"
+                  class="project-img"
+                />
+              </a>
+            </div>
+            <div class="content">
+              <h2>ToDo List</h2>
+              <h3>
+                A simple To Do List made with HTML, CSS and Javascript. Basic
+                functionality to add, check-off and remove list items.
+              </h3>
+              <h6>Skills used:</h6>
+              <div class="skill-icon">
+                <i class="fa-brands fa-html5 fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-css3-alt fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-js fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-git fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="image-container">
+              <a
+                href="https://github.com/rpenstonesmith/Fotomatic"
+                target="_blank"
+                alt="screenshot"
+                title="screenshot of Fotomatic responsive webpage project"
+              >
+                <img
+                  src="./resources/images/Fotomat webpage.png"
+                  class="project-img"
+                />
+              </a>
+            </div>
+            <div class="content">
+              <h2>Responsive Webpage</h2>
+              <h3>
+                A response webpage built using HTML and CSS. Utillising media
+                queries to produce a responsive navigation bar, main content and
+                footer.
+              </h3>
+              <h6>Skills used:</h6>
+              <div class="skill-icon">
+                <i class="fa-brands fa-html5 fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-css3-alt fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-git fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="image-container">
+              <a
+                href="https://github.com/rpenstonesmith/Player-Counter.git"
+                target="_blank"
+                alt="screenshot"
+                title="screenshot of player counter project"
+              >
+                <img
+                  src="./resources/images/Player Counter.png"
+                  class="project-img"
+                />
+              </a>
+            </div>
+            <div class="content">
+              <h2>Player Counter</h2>
+              <h3>
+                A simple webpage using basic HTML, CSS and Javascript to count
+                the numnber of players used by my favourite football team.
+              </h3>
+              <h6>Skills used:</h6>
+              <div class="skill-icon">
+                <i class="fa-brands fa-html5 fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-css3-alt fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-js fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-git fa-2xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
         </div>
 
-        <div class="content">
-          <h2>Calculator</h2>
-          <h3>A calculator built using HTML, CSS and Javascript, utilising simple Javascript functions to deliver a
-            simple, easy-to-use calculator.</h3>
-          <h6>Skills used:</h6>
-          <div class="skill-icon">
-            <i class="fa-brands fa-html5 fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-css3-alt fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-js fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-git fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-github fa-2xl"aria-hidden="true"></i>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </section>
+
+    <!--Experience-->
+
+    <section class="experience" id="experience">
+      <h2 class="subheading">Places worked...</h2>
+
+      <div class="experience-container">
+        <div class="experience-circle">
+          <img
+            src="./resources/images/school.jpg"
+            alt="books and crayons"
+            class="image"
+            style="width: 100%"
+          />
+          <div class="experience-location">
+            <div class="text-circle">
+              <h4 class="employer">Education - Primary School</h4>
+              <p>
+                For the past 8 years I've worked as a Primary School Teacher in
+                year 5 and 6. Since the birth of my second son, I've worked as a
+                supply teacher, covering upper KS2.
+              </p>
+              <h5 class="date">2016 - Current</h5>
+            </div>
           </div>
         </div>
-      </article>
 
-      <article class="project">
-        <div class="image-container">
-          <a href="https://github.com/rpenstonesmith/To-Do-List" target=_blank alt="screenshot"
-            title="screenshot of To Do List project">
-            <img src="./resources/images/To Do List.png" class="project-img" />
-          </a>
-        </div>
-
-        <div class="content">
-          <h2>ToDo List</h2>
-          <h3>A simple To Do List made with HTML, CSS and Javascript. Basic functionality to add, check-off and remove
-            list items.</h3>
-          <h6>Skills used:</h6>
-          <div class="skill-icon">
-            <i class="fa-brands fa-html5 fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-css3-alt fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-js fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-git fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
+        <div class="experience-circle">
+          <img
+            src="./resources/images/cityscape.jpg"
+            alt="City of London at night"
+            class="image"
+            style="width: 100%"
+          />
+          <div class="experience-location">
+            <div class="text-circle">
+              <h4 class="employer">
+                Finance - Association of British Insurers
+              </h4>
+              <p>
+                Worked as a Policy Advisor at the Association of British
+                Insurers, leading policy development with ABI members and
+                building strong relationships based on understanding their
+                commercial environment and regulatory impact.
+              </p>
+              <h5 class="date">2015 - 2016</h5>
+            </div>
           </div>
         </div>
-      </article>
 
-      <article class="project">
-        <div class="image-container">
-          <a href="https://github.com/rpenstonesmith/Fotomatic" target=_blank alt="screenshot"
-            title="screenshot of Fotomatic responsive webpage project">
-            <img src="./resources/images/Fotomat webpage.png" class="project-img" />
-          </a>
-        </div>
-        <div class="content">
-          <h2>Responsive Webpage</h2>
-          <h3>A response webpage built using HTML and CSS. Utillising media queries to produce a responsive navigation
-            bar, main content and footer.</h3>
-          <h6>Skills used:</h6>
-          <div class="skill-icon">
-            <i class="fa-brands fa-html5 fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-css3-alt fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-git fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="image-container">
-          <a href="https://github.com/rpenstonesmith/Player-Counter.git" target=_blank alt="screenshot"
-            title="screenshot of player counter project">
-            <img src="./resources/images/Player Counter.png" class="project-img" />
-          </a>
-        </div>
-        <div class="content">
-          <h2>Player Counter</h2>
-          <h3>A simple webpage using basic HTML, CSS and Javascript to count the numnber of players used by my favourite
-            football team.</h3>
-          <h6>Skills used: </h6>
-          <div class="skill-icon">
-            <i class="fa-brands fa-html5 fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-css3-alt fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-js fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-git fa-2xl" aria-hidden="true"></i>
-            <i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
-          </div>
-        </div>
-      </article>
-    </div>
-
-<button class="carousel-btn next">&#10095;</button>
-  </div>
-
-  </section>
-
-<!--Experience-->
-
-  <section class="experience" id="experience">
-    <h2 class="subheading">Places worked...</h2>
-
-    <div class="experience-container">
-
-      <div class="experience-circle">
-        <img src="./resources/images/school.jpg" alt="books and crayons" class="image" style="width:100%">
-        <div class="experience-location">
-          <div class="text-circle">
-            <h4 class="employer">Education - Primary School</h4>
-            <p>For the past 8 years I've worked as a Primary School Teacher in year 5 and 6. Since the birth of my
-              second son, I've worked as a supply teacher, covering upper KS2.</p>
-            <h5 class="date">2016 - Current</h5>
+        <div class="experience-circle">
+          <img
+            src="./resources/images/parliament.jpg"
+            alt="parliament at night"
+            class="image"
+            style="width: 100%"
+          />
+          <div class="experience-location">
+            <div class="text-circle">
+              <h4 class="employer">Politics - Houses of Parliament</h4>
+              <p>
+                As a Senior Parliamentary Researcher I worked in the Houses of
+                Parliament where I composed bespoke briefings for MPs on HM
+                Treasury policies, including banking, consumer credit and
+                pensions reforms alongside drafting correspondence to
+                constituents on HM Treasury matters.
+              </p>
+              <h5 class="date">2013 - 2015</h5>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="experience-circle">
-        <img src="./resources/images/cityscape.jpg" alt="City of London at night" class="image" style="width:100%">
-        <div class="experience-location">
-          <div class="text-circle">
-            <h4 class="employer">Finance - Association of British Insurers</h4>
-            <p>Worked as a Policy Advisor at the Association of British Insurers, leading policy development with ABI
-              members and building strong relationships based on understanding their commercial environment and
-              regulatory impact.
-            </p>
-            <h5 class="date">2015 - 2016</h5>
-          </div>
-        </div>
+    <!--Contact-->
+
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2 class="subheading">Contact me...</h2>
       </div>
 
-      <div class="experience-circle">
-        <img src="./resources/images/parliament.jpg" alt="parliament at night" class="image" style="width:100%">
-        <div class="experience-location">
-          <div class="text-circle">
-            <h4 class="employer">Politics - Houses of Parliament</h4>
-            <p>As a Senior Parliamentary Researcher I worked in the Houses of Parliament where I composed bespoke
-              briefings for MPs on HM Treasury policies, including banking, consumer credit and pensions reforms
-              alongside drafting correspondence to constituents on HM Treasury matters.
-            </p>
-            <h5 class="date">2013 - 2015</h5>
-          </div>
-        </div>
+      <!--Contact Form-->
+
+      <div class="contact-wrapper">
+        <section class="form-container">
+          <h3 class="email-header">...via email</h3>
+          <form action="action_page.php">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </section>
       </div>
-  </section>
+    </section>
 
-<!--Contact-->
+    <!--Footer-->
 
-  <section class="contact" id="contact">
+    <footer>
+      <ul class="left-nav">
+        <li><a>&copy; Ross Penstone-Smith 2025</a></li>
+      </ul>
 
-    <div class="contact-container">
-      <h2 class="subheading">Contact me...</h2>
-    </div>
+      <ul class="mid-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-  <!--Contact Form-->
-
-    <div class="contact-wrapper">
-      <section class="form-container">
-        <h3 class="email-header">...via email</h3>
-        <form action="action_page.php">
-
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name..">
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email..">
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
-
-        </form>
-      </section>
-    </div>
-
-  </section>
-
-<!--Footer-->
-
-  <footer>
-    <ul class="left-nav">
-      <li><a>&copy; Ross Penstone-Smith 2025</a></li>
-    </ul>
-
-    <ul class="mid-nav">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <ul class="right-nav">
-      <li><a href="https://www.linkedin.com/in/ross-penstone-smith-9b9682274/"><i class="fa-brands fa-linkedin fa-2xl"
-            aria-hidden="true"></i></a></li>
-      <li><a href="https://www.instagram.com/rlpsmith/?hl=en"><i class="fa-brands fa-instagram fa-2xl"
-            aria-hidden="true"></i></a></li>
-      <li><a href="https://github.com/rpenstonesmith"><i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i></a>
-      </li>
-      <li><a href="https://x.com/rlp_smith"><i class="fa-brands fa-x-twitter fa-2xl" aria-hidden="true"></i></a></li>
-    </ul>
-  </footer>
-
-</body>
+      <ul class="right-nav">
+        <li>
+          <a href="https://www.linkedin.com/in/ross-penstone-smith-9b9682274/"
+            ><i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/rlpsmith/?hl=en"
+            ><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/rpenstonesmith"
+            ><i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://x.com/rlp_smith"
+            ><i class="fa-brands fa-x-twitter fa-2xl" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

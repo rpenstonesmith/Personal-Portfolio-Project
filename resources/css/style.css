@@ -344,6 +344,7 @@ header li a {
   justify-content: flex-start;
   padding: 3rem;
   scroll-snap-align: center;
+  overflow: hidden;
 }
 
 .projects h2 {
@@ -353,29 +354,26 @@ header li a {
   margin-bottom: 2rem;
 }
 
+.carousel-wrapper {
+  position: relative;
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
 .project-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   transition: transform 0.5s ease;
-  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .project {
   flex: 0 0 100%;
-  max-width: 100%;
   box-sizing: border-box;
   padding: 2rem;
   margin: 0;
   background-color: var(--white);
   border-radius: 0.25rem;
-}
-
-.carousel-wrapper {
-  position: relative;
-  max-width: 900px;
-  margin: auto;
-  overflow: hidden;
 }
 
 .carousel-btn {
@@ -391,27 +389,12 @@ header li a {
   font-size: 2rem;
 }
 
-.carousel-btn.prev { left: 0; }
-.carousel-btn.next { right: 0; }
-
-.carousel-dots {
-  text-align: center;
-  margin-top: 1rem;
+.carousel-btn.prev {
+  left: 0;
 }
 
-.carousel-dots .dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.carousel-dots .dot.active {
-  background-color: #333;
+.carousel-btn.next {
+  right: 0;
 }
 
 .project .image-container {

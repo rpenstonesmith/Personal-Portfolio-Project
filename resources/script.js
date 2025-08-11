@@ -40,29 +40,32 @@ toggle.addEventListener("click", () => {
 
 // Carousel
 document.addEventListener("DOMContentLoaded", () => {
-  const projects = document.querySelectorAll(".project");
-  const container = document.querySelector(".project-container");
+  const projectContainer = document.querySelector(".project-container");
+  const slides = document.querySelectorAll(".project-container .project");
   const prevBtn = document.querySelector(".carousel-btn.prev");
   const nextBtn = document.querySelector(".carousel-btn.next");
 
   let currentIndex = 0;
 
   function updateCarousel() {
-    const slideWidth = projects[0].offsetWidth;
+    const slideWidth = slides[0].offsetWidth;
     const offset = -currentIndex * slideWidth;
-    container.style.transform = `translateX(${offset}px)`;
+    projectContainer.style.transform = `translateX(${offset}px)`;
   }
 
   prevBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     updateCarousel();
   });
 
   nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % projects.length;
+    currentIndex = (currentIndex + 1) % slides.length;
     updateCarousel();
   });
 
-  // === Init ===
+  window.addEventListener("resize", updateCarousel);
+
   updateCarousel();
 });
+
+
