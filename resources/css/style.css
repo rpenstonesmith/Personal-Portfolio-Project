@@ -111,10 +111,6 @@ header {
   box-sizing: border-box;
 }
 
-header .toggle-switch {
-  padding: 1rem 0 0 0;
-}
-
 /* container for dark-mode toggle */
 header .controls {
   display: flex;
@@ -471,7 +467,7 @@ header li a {
 
   .project {
     width: 80%;
-    background-color: #ffffff;
+    background-color: var(--white);
   }
 }
 

@@ -16,10 +16,10 @@ let toggle = document.querySelector("#dark-mode-toggle");
 let label = document.querySelector("#mode-label");
 
 toggle.addEventListener("click", () => {
-  let mode = toggle.checked ? "light" : "dark";
+  let mode = toggle.checked ? "dark" : "light";
 
   // Update label text
-  label.textContent = toggle.checked ? "Dark Mode" : "Light Mode";
+  label.textContent = toggle.checked ? "Light Mode" : "Dark Mode";
 
   // Apply CSS custom colour properties based on mode
   bodyCssProps.set("--background", bodyCssProps.get(`--${mode}-background`));
@@ -35,7 +35,9 @@ toggle.addEventListener("click", () => {
 // Hamburger menu
 function headerNav() {
   const links = document.querySelector(".links");
-  links.classList.toggle("show-links");
+  if (links) {
+    links.classList.toggle("show-links");
+  }
 }
 
 // Carousel
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentIndex = 0;
 
   function updateCarousel() {
+    if (slides.length === 0) return;
     const slideWidth = slides[0].offsetWidth;
     const offset = -currentIndex * slideWidth;
     projectContainer.style.transform = `translateX(${offset}px)`;
