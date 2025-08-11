@@ -28,6 +28,15 @@
   --green: var(--dark-green);
   --white: var(--dark-white);
   --button: var(--dark-button);
+
+  /* Overlay */
+  --overlay-background: rgba(0, 0, 0, 0.4);
+
+  /* Letter Spacing */
+  --spacing: 0.1em;
+
+  /* Transitions */
+  --transition: all 0.3s ease;
 }
 
 html {
@@ -135,7 +144,7 @@ nav.nav-center {
 }
 
 .nav-toggle:active {
-  color: var(--clr-primary-1);
+  color: var(--primary);
   transform: rotate(90deg);
 }
 
@@ -147,10 +156,9 @@ ul {
 }
 
 header li a {
-  text-decoration: none;
+  color: var(--primary);
   padding-bottom: 1rem;
   border-bottom: 1px solid transparent;
-  color: var(--clr-primary-5);
   transition: var(--transition);
 }
 
@@ -172,7 +180,6 @@ header li a {
 }
 
 .links a:hover {
-  background: var(--clr-primary-8);
   color: var(--green);
 }
 
@@ -231,7 +238,6 @@ header li a {
     background: transparent;
     border-bottom: 1px solid var(--green);
     color: var(--green);
-  ;
   }
 
   .social-icons {
@@ -240,12 +246,8 @@ header li a {
 
   .social-icons a {
     margin: 0 0.5rem;
-    color: var(--clr-primary-5);
+    color: var(--primary);
     transition: var(--transition);
-  }
-
-  .social-icons a:hover {
-    color: var(--clr-primary-7);
   }
 }
 
@@ -381,12 +383,18 @@ header li a {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--overlay-background);
   border: none;
-  color: white;
+  color: var(--white);
   padding: 1rem;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 2rem; }
+
+@media only screen and (max-width: 480px) {
+  .carousel-btn {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
 }
 
 .carousel-btn.prev {
@@ -397,25 +405,27 @@ header li a {
   right: 0;
 }
 
-.project .image-container {
+.image-container {
   max-width: 60%;
-  height: auto;
   margin: auto;
-  overflow: hidden;
-  border-radius: 0.25rem;
 }
 
-.project .image-container img {
-  display: block;
+.project-img {
   max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.25rem;
   transition: transform 250ms;
 }
 
-.project .image-container img:hover {
+.project-img:hover {
+  transition: transform 250ms;
   transform: scale(1.1);
 }
 
-.project .content {
+.content {
   padding-top: 2rem;
   text-align: center;
   align-items: center;
@@ -691,7 +701,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: var(--button);
-  color: var(--background);
+  color: var(--primary);
 }
 
 label {
