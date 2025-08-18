@@ -369,16 +369,17 @@ header li a {
   display: flex;
   transition: transform 0.5s ease;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 .project {
   flex: 0 0 100%;
   box-sizing: border-box;
   padding: 2rem;
-  margin: 0;
   background-color: var(--white);
   border-radius: 0.25rem;
 }
+
 
 .carousel-btn {
   position: absolute;
