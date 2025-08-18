@@ -49,12 +49,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentIndex = 0;
 
-  function updateCarousel() {
-    if (slides.length === 0) return;
-    const slideWidth = slides[0].offsetWidth;
-    const offset = -currentIndex * slideWidth;
-    projectContainer.style.transform = `translateX(${offset}px)`;
-  }
+function updateCarousel() {
+  if (slides.length === 0) return;
+  const slideWidth = projectContainer.clientWidth;
+  const offset = -currentIndex * slideWidth;
+  projectContainer.style.transform = `translateX(${offset}px)`;
+}
 
   prevBtn.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
